@@ -1,0 +1,13 @@
+{
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "compressed",
+			"autoprefix": "last 5 versions",
+			"extensionName": ".css",
+			"savePath": "assets/css"
+			// "savePath": "assets/css"
+		}
+	],
+	"liveServer.settings.port": 5501,
+	"cSpell.words": ["iefix"]
+}

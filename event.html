@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=1360, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<meta name="color-scheme" content="dark">
@@ -37,11 +38,11 @@
 	Я решил выбрать игру Minecraft, так как в ней множество серверов, я выбрал самый популярный сервер Hypixel
  -->
 
-<body>
+<body id="body">
 	<div class="wrapper">
 		<header class="header">
 			<nav class="nav">
-				<div class="container nav__content">
+				<div class="container nav__container">
 					<a href="#" class="nav__logo">
 						<img src="./assets/event/logo.png" alt="Логотип">
 					</a>
@@ -50,12 +51,15 @@
 						<a href="#description" class="nav__item">Описание</a>
 						<a href="#stages" class="nav__item">Этапы</a>
 						<a href="#prizes" class="nav__item">Призы</a>
+						<a href="#leaders" class="nav__item">Лидеры</a>
 						<a href="https://hypixel.net/" target="_blank" class="nav__item">Основной сайт</a>
 					</div>
 				</div>
+
+				<img src="./assets/event/garland/1.png" alt="Новогодняя гирлянда" id="garland" class="nav__garland container">
 			</nav>
 
-			<div class="container header__content">
+			<div class="container header__container">
 				<div class="header__text">
 					<h1 class="header__title">Волшебные праздники в Забытом Крае 01.01 - 10.01</h1>
 					<p class="header__description">Новогодний ивент на всем любимом сервере <b>Hypixel</b>! В этот раз будет <b>круче</b> и <b>веселее</b>!</p>
@@ -66,6 +70,218 @@
 				</div>
 			</div>
 		</header>
+
+		<main class="main">
+			<div class="container main__container">
+				<section class="section" id="description">
+					<h1 class="section__title">Волшебные праздники в Забытом Крае</h1>
+					<p class="section__text text-center">
+						Праздничное событие "Волшебные праздники в Забытом Крае" приносит в мир Minecraft волшебство, радость и новогодние приключения. Загадочный персонаж, по имени Зимний Волшебник, появляется в каждой деревне, предлагая игрокам участвовать в увлекательных заданиях и квестах, чтобы разблокировать особые награды.
+					</p>
+				</section>
+
+				<section class="section" id="stages">
+					<h1 class="section__title">Этапы ивента</h1>
+					<ul class="section__text list-style">
+						<li>
+							Поиск Зимнего Волшебника:
+							<ul class="add-list">
+								<li>Зимний Волшебник появляется в каждой деревне за два дня до Нового года.</li>
+								<li>Игроки должны отследить его местоположение, следуя подсказкам и подсветке на небесах.</li>
+							</ul>
+						</li>
+
+						<li>
+							Праздничные квесты:
+							<ul class="add-list">
+								<li>Зимний Волшебник предлагает серию квестов, связанных с сезонными заданиями, такими как сбор специальных новогодних предметов или поиск потерянных подарков в различных биомах.</li>
+							</ul>
+						</li>
+
+						<li>
+							Украшение деревни:
+							<ul class="add-list">
+								<li>Игроки могут участвовать в конкурсе на лучшую новогоднюю украшенную деревню.</li>
+								<li>Для этого они должны создать и установить новогодние украшения, фейерверки и огоньки в своей деревне.</li>
+							</ul>
+						</li>
+
+						<li>
+							Мини-игры:
+							<ul class="add-list">
+								<li>Зимний Волшебник организует несколько новогодних мини-игр, таких как гонки на санях, снежные бои и катание на льду.</li>
+							</ul>
+						</li>
+
+						<li>
+							Босс-битва с Королем Льда:
+							<ul class="add-list">
+								<li>После выполнения всех заданий, игроки получают доступ к порталу в "Замок Замерзшего Короля Льда".</li>
+								<li>Там их ждет эпическая битва с Королем Льда, который хранит в себе специальные новогодние сокровища.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section class="section" id="prizes">
+					<h1 class="section__title">Призовые места</h1>
+					<div class="row">
+						<div class="col-4">
+							<div class="prize">
+								<p class="prize__place">1 место:</p>
+								<h3 class="prize__name">Консоль <b>PlayStation 5</b></h3>
+								<img src="./assets/event/prizes/1.png" alt="" class="prize__image">
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="prize">
+								<p class="prize__place">2 место:</p>
+								<h3 class="prize__name">Консоль <b>Xbox 360</b></h3>
+								<img src="./assets/event/prizes/2.png" alt="" class="prize__image">
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="prize">
+								<p class="prize__place">3 место:</p>
+								<h3 class="prize__name"><b>Яндекс Станция</b> с Алисой</h3>
+								<img src="./assets/event/prizes/3.png" alt="" class="prize__image">
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="prize">
+								<p class="prize__place">4 место:</p>
+								<h3 class="prize__name"><b>5 000</b> монет на баланс</h3>
+								<img src="./assets/event/prizes/4.png" alt="" class="prize__image">
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="prize">
+								<p class="prize__place">5 место:</p>
+								<h3 class="prize__name"><b>3 000</b> монет на баланс</h3>
+								<img src="./assets/event/prizes/5.png" alt="" class="prize__image">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section" id="leaders">
+					<h1 class="section__title">Таблица лидеров</h1>
+					<div class="table">
+						<div class="table__head">
+							<p class="table__head-text">ID</p>
+							<p class="table__head-text">Игрок</p>
+							<p class="table__head-text">Этап ивента</p>
+							<p class="table__head-text">Дата последнего выхода</p>
+						</div>
+						<div class="table__body">
+							<div class="table__item">
+								<p class="table__item-id">#1</p>
+								<div class="table__item-user">
+									<img src="./assets/event/users/Albert_Freids.png" alt="Albert_Freids">
+									<p>Albert_Freids</p>
+								</div>
+								<p class="table__item-text">5 этап: Босс-битва с Королем Льда</p>
+								<p class="table__item-text">20 декабря 2023 в 00:02</p>
+							</div>
+
+							<div class="table__item">
+								<p class="table__item-id">#2</p>
+								<div class="table__item-user">
+									<img src="./assets/event/users/Aldron.png" alt="Aldron">
+									<p>Aldron</p>
+								</div>
+								<p class="table__item-text">5 этап: Босс-битва с Королем Льда</p>
+								<p class="table__item-text">19 декабря 2023 в 23:03</p>
+							</div>
+
+							<div class="table__item">
+								<p class="table__item-id">#3</p>
+								<div class="table__item-user">
+									<img src="./assets/event/users/Alois_Rochefort.png" alt="Alois_Rochefort">
+									<p>Alois_Rochefort</p>
+								</div>
+								<p class="table__item-text">5 этап: Босс-битва с Королем Льда</p>
+								<p class="table__item-text">19 декабря 2023 в 18:56</p>
+							</div>
+
+							<div class="table__item">
+								<p class="table__item-id">#4</p>
+								<div class="table__item-user">
+									<img src="./assets/event/users/Basar.png" alt="Basar">
+									<p>Basar</p>
+								</div>
+								<p class="table__item-text">4 этап: Мини-игры</p>
+								<p class="table__item-text">19 декабря 2023 в 19:05</p>
+							</div>
+
+							<div class="table__item">
+								<p class="table__item-id">#5</p>
+								<div class="table__item-user">
+									<img src="./assets/event/users/Elder_Wandering.png" alt="Elder_Wandering">
+									<p>Elder_Wandering</p>
+								</div>
+								<p class="table__item-text">4 этап: Мини-игры</p>
+								<p class="table__item-text">19 декабря 2023 в 17:34</p>
+							</div>
+
+							<div class="table__item">
+								<p class="table__item-id">#6</p>
+								<div class="table__item-user">
+									<img src="./assets/event/users/Helin_Lidcroft.png" alt="Helin_Lidcroft">
+									<p>Helin_Lidcroft</p>
+								</div>
+								<p class="table__item-text">3 этап: Украшение деревни</p>
+								<p class="table__item-text">20 декабря 2023 в 00:55</p>
+							</div>
+
+							<div class="table__item">
+								<p class="table__item-id">#7</p>
+								<div class="table__item-user">
+									<img src="./assets/event/users/Raum.png" alt="Raum">
+									<p>Raum</p>
+								</div>
+								<p class="table__item-text">3 этап: Украшение деревни</p>
+								<p class="table__item-text">19 декабря 2023 в 21:59</p>
+							</div>
+
+							<div class="table__item">
+								<p class="table__item-id">#8</p>
+								<div class="table__item-user">
+									<img src="./assets/event/users/Reinhard_Bahmeir.png" alt="Reinhard_Bahmeir">
+									<p>Reinhard_Bahmeir</p>
+								</div>
+								<p class="table__item-text">2 этап: Праздничные квесты</p>
+								<p class="table__item-text">20 декабря 2023 в 00:54</p>
+							</div>
+
+							<div class="table__item">
+								<p class="table__item-id">#9</p>
+								<div class="table__item-user">
+									<img src="./assets/event/users/saythe.png" alt="saythe">
+									<p>saythe</p>
+								</div>
+								<p class="table__item-text">2 этап: Праздничные квесты</p>
+								<p class="table__item-text">19 декабря 2023 в 23:33</p>
+							</div>
+
+							<div class="table__item">
+								<p class="table__item-id">#10</p>
+								<div class="table__item-user">
+									<img src="./assets/event/users/Varus_Beretif.png" alt="Varus_Beretif">
+									<p>Varus_Beretif</p>
+								</div>
+								<p class="table__item-text">2 этап: Праздничные квесты</p>
+								<p class="table__item-text">19 декабря 2023 в 16:05</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
 
 		<footer class="footer">
 			<div class="container footer__container">
@@ -95,6 +311,9 @@
 			</div>
 		</footer>
 	</div>
+
+	<script src="./assets/js/event.js"></script>
+	<script src="./assets/js/snow.js"></script>
 </body>
 
 </html>
